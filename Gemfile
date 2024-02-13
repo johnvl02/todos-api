@@ -26,6 +26,11 @@ end
 gem 'rubocop-faker'
 gem 'rubocop-rspec', require: false
 
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.20'
+
+gem 'jwt'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
