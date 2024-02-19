@@ -20,7 +20,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'factory_bot_rails', '~> 4.0'
-  gem 'faker'
   gem 'shoulda-matchers', '~> 6.0' # 5.3/3.1
 end
 gem 'rubocop-faker'
@@ -30,6 +29,12 @@ gem 'rubocop-rspec', require: false
 gem 'bcrypt', '~> 3.1.20'
 
 gem 'jwt'
+
+gem 'active_model_serializers', '~> 0.10.0'
+
+gem 'will_paginate', '~> 3.1.0'
+
+gem 'faker'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
