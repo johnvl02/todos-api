@@ -36,6 +36,8 @@ gem 'will_paginate', '~> 3.1.0'
 
 gem 'faker'
 
+gem 'rswag'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
