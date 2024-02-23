@@ -18,20 +18,30 @@ RSpec.configure do |config|
     'v1/swagger.yaml' => {
       openapi: '3.0.1',
       info: {
-        title: 'API V1',
+        title: 'TODOS-API',
         version: 'v1'
       },
       paths: {},
       servers: [
         {
-          url: 'https://{defaultHost}',
+          url: 'http://{defaultHost}:3000',
           variables: {
             defaultHost: {
-              default: 'www.example.com'
+              default: '127.0.0'
             }
           }
         }
-      ]
+      ],
+      components: {
+        securitySchemes: {
+          Bearer: {
+            type: :apiKey,
+            name: 'Authorization',
+            in: :header,
+            description: 'Your Bearer token'
+          }
+        }
+      }
     }
   }
 
